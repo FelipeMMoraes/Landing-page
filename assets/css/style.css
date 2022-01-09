@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+header {
+  background: #333
+    url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+  max-width: 100%;
+  /* height: 450px; */
+  text-align: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.infoheader {
+  position: relative;
+  z-index: 2;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 50px 0px;
+  gap: 40px;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #333;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+header h1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+header a {
+  padding: 20px 40px;
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+  max-width: 100px;
+  margin: 0 auto;
+  border: solid 1px #fff;
+}
+
+.container {
+  padding: 0 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#sectiona {
+  background: #eaeaea;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+#sectiona h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 30px;
+}
+
+#sectionb img {
+  max-height: 225px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#sectionb {
+  background: #333;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#sectionb article {
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.cardcontent {
+  padding: 15px;
+}
+
+.cardcontent h3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+}
+
+.cardcontent p {
+  text-align: center;
+  font-weight: lighter;
+  color: #333;
+  padding-bottom: 30px;
+}
+
+#sectionc {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+#sectionc h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 30px;
+}
+
+.esquerda {
+  background: #2690d4;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.esquerda p {
+  color: #eaeaea;
+}
+
+.informacao {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+
+#sectiond h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #eaeaea;
+  padding-bottom: 30px;
+}
+
+.direita {
+  background: #333;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.direita p {
+  color: #eaeaea;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2690d4;
+}
+
+@media (min-width: 767px) {
+  .infoheader {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 20px;
+  }
+
+  #sectiona .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+  #sectiona .content-text p {
+    padding-top: 0;
+  }
+
+  #sectionb {
+    padding: 2em 1em 1em;
+  }
+
+  #sectionb .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  #sectionc {
+    padding: 70px 0px;
+  }
+}
